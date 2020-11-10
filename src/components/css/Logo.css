@@ -1,0 +1,16 @@
+.logo {
+  width: 273px;
+  height: 61px;
+  background-color: #7aa228;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sistafe-logo {
+  width: 91px;
+  height: 61px;
+}
