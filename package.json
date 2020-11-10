@@ -19,7 +19,7 @@
     "react-google-maps": "^9.4.5",
     "react-native": "^0.63.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
