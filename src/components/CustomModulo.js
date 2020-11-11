@@ -155,18 +155,6 @@ function MODULOS({moduloDesc}) {
     }
 }
 
-const MOD = (props) => {
-    if(this.props.moduloDesc==="GFA"){
-        return (<div>
-            <ul className="list horizontal-list">
-                           <li>
-                           <a href="#"><Button modulo="MAG" /></a>
-                           </li>
-                     </ul>
-        </div>);
-    }
-        }
-
 class CustomModulo extends Component {
     constructor(props){
         super(props);

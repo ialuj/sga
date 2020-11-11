@@ -13,7 +13,6 @@ class Autarquia extends Component {
     this.state = {
       count: 0,
     };
-    this.setState({ count: 1 });
     this.incrementCount = this.incrementCount.bind(this);
     this.decrementCount = this.decrementCount.bind(this);
   }
@@ -55,7 +54,7 @@ class Autarquia extends Component {
       <div className="div-home">
         <div className="div-carossel carousel slide">
           <div className="carousel-inner div-center">
-            {this.state.count === 1 && <SouthZone />}
+            {this.state.count === 0 && <SouthZone /> || this.state.count === 1 && <SouthZone />}
             {this.state.count === 2 && <CenterZone />}
             {this.state.count === 3 && <NorthZone />}
           </div>

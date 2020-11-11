@@ -123,7 +123,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: gray;
+  background-color: gainsboro;
   margin-top: 10px;
 }
 
@@ -139,4 +139,72 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-name: div-province-zones-animation;
+  animation-duration: 4s;
+}
+
+@keyframes div-province-zones-animation{
+  from {background-color: gainsboro;}
+  to {background-color: whitesmoke;}
+  from{height: 0rem;}
+  to{height: 20rem;}
+}
+
+.img-zone {
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-autarchy {
+  width: 20rem;
+  height: 3.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: div-autarchy-animation;
+  animation-duration: 2s;
+}
+
+@keyframes div-autarchy-animation{
+  from {background-color: gainsboro;}
+  to {background-color: whitesmoke;}
+  from{height: 0rem;}
+  to{height: 3rem;}
+}
+
+.img-autarchy-logo {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: img-autarchy-logo-animation;
+  animation-duration: 2s;
+}
+
+@keyframes img-autarchy-logo-animation{
+  from {background-color: gainsboro;}
+  to {background-color: whitesmoke;}
+  from{height: 0rem;}
+  to{height: 3.125rem;}
+}
+
+.div-popup {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: div-popup-animation;
+  animation-duration: 2s;
+}
+
+@keyframes div-popup-animation{
+  from {background-color: gainsboro;}
+  to {background-color: whitesmoke;}
+  from{height: 0rem;}
+  to{height: 30rem;}
 }
