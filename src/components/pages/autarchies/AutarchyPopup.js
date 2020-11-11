@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import articles from "../../fakedatabase/articles.json";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../css/Home.css";
 
@@ -19,7 +21,15 @@ class AutarchyPopup extends Component{
             <li></li>
             <li></li>
             <li>
-             <p>A {this.props.autarquia} iniciou o exercício do seu 5.º mandato na sequência das quintas eleições autárquicas realizadas em Outubro do ano de dois mil e dezoito.</p>
+             {articles.map((article, i) => {
+                if(article.title===this.props.autarquia)
+                {
+                return <p key={i}>
+                  {article.description}  
+                </p>
+                }
+            })
+             }
              </li>
              </ul>
             </div>
