@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portal-do-sga/static/css/main.a5674db9.chunk.css",
+    "main.js": "/portal-do-sga/static/js/main.1e34510f.chunk.js",
+    "main.js.map": "/portal-do-sga/static/js/main.1e34510f.chunk.js.map",
+    "runtime-main.js": "/portal-do-sga/static/js/runtime-main.62ecae15.js",
+    "runtime-main.js.map": "/portal-do-sga/static/js/runtime-main.62ecae15.js.map",
+    "static/css/2.69646142.chunk.css": "/portal-do-sga/static/css/2.69646142.chunk.css",
+    "static/js/2.524fa3be.chunk.js": "/portal-do-sga/static/js/2.524fa3be.chunk.js",
+    "static/js/2.524fa3be.chunk.js.map": "/portal-do-sga/static/js/2.524fa3be.chunk.js.map",
+    "index.html": "/portal-do-sga/index.html",
+    "precache-manifest.c0c51398c3e0792f5cd0004045684c71.js": "/portal-do-sga/precache-manifest.c0c51398c3e0792f5cd0004045684c71.js",
+    "service-worker.js": "/portal-do-sga/service-worker.js",
+    "static/css/2.69646142.chunk.css.map": "/portal-do-sga/static/css/2.69646142.chunk.css.map",
+    "static/css/main.a5674db9.chunk.css.map": "/portal-do-sga/static/css/main.a5674db9.chunk.css.map",
+    "static/js/2.524fa3be.chunk.js.LICENSE.txt": "/portal-do-sga/static/js/2.524fa3be.chunk.js.LICENSE.txt",
+    "static/media/apoio_utilizador_portal.gif": "/portal-do-sga/static/media/apoio_utilizador_portal.e3cb05d5.gif",
+    "static/media/apresentacao_portal.gif": "/portal-do-sga/static/media/apresentacao_portal.45d508f5.gif",
+    "static/media/logo.png": "/portal-do-sga/static/media/logo.29c01339.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62ecae15.js",
+    "static/css/2.69646142.chunk.css",
+    "static/js/2.524fa3be.chunk.js",
+    "static/css/main.a5674db9.chunk.css",
+    "static/js/main.1e34510f.chunk.js"
+  ]
+}
