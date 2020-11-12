@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import MainModulo from "./MainModulo";
+
+import MAIN_MODULO from "./pages/modulos/MainModule";
 
 import "./css/Home.css";
 
@@ -11,7 +12,7 @@ class Treinamento extends Component {
   render() {
     return (
       <div className="div-home">
-        <MainModulo
+        <MAIN_MODULO
           environment={this.state.environment}
           urlPrefix={this.state.urlPrefix}
         />

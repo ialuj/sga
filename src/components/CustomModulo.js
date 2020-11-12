@@ -164,23 +164,17 @@ class CustomModulo extends Component {
         moduloDescription:this.props.sga_modulo_description,
         enviroment :this.props.environment,
         url :this.props.urlPrefix,
-        moduloDesc:"",
-        count:this.props.count
     };
 
     handleEvent(){  
-        console.log(this.props);  
+        console.log("Respondendo ao evento click!");  
       } 
-
-    componentDidUpdate = () => {
-        console.log("Clicked: "+this.props.selectedModulo);
-    }
-    
 
     render() {
       return (
           <div onClick={this.handleEvent}>
               <MODULOS moduloDesc =  {this.props.sga_modulo_description} />
+              <div></div>
           </div>
       );
     }

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import SgaModulo from "./SgaModulo";
 
-import "./css/Home.css";
+import "../../css/Home.css";
 
-class MainModulo extends Component {
+class Modulo_Part_2 extends Component {
   state = {
     environment:this.props.environment,
     urlPrefix:this.props.urlPrefix,
@@ -11,31 +11,9 @@ class MainModulo extends Component {
 
   render() {
     return (
-      <div className="div-home">
+      <div className="div-province-zones">
         <ul className="list">
-          <li>
-            <SgaModulo
-              sga_modulo_description="Gestão Financeira Autárquica" environment = {this.state.environment}
-              urlPrefix = {this.state.urlPrefix}
-            />
-          </li>
-          <li>
-            <SgaModulo sga_modulo_description="Gestão de Receitas Autárquicas" environment = {this.state.environment}
-              urlPrefix = {this.state.urlPrefix} />
-          </li>
-          <li>
-            <SgaModulo sga_modulo_description="Gestão de Serviços Autárquicos" environment = {this.state.environment}
-              urlPrefix = {this.state.urlPrefix} />
-          </li>
-          <li>
-            <SgaModulo sga_modulo_description="Gestão de Informação Geográfica" environment = {this.state.environment}
-              urlPrefix = {this.state.urlPrefix} />
-          </li>
-          <li>
-            <SgaModulo sga_modulo_description="Ordenamento e Gestão Urbanística" environment = {this.state.environment}
-              urlPrefix = {this.state.urlPrefix} />
-          </li>
-          <li>
+        <li>
             <SgaModulo sga_modulo_description="Gestão da Organização e Conhecimento" environment = {this.state.environment}
               urlPrefix = {this.state.urlPrefix} />
           </li>
@@ -61,4 +39,4 @@ class MainModulo extends Component {
   }
 }
 
-export default MainModulo;
+export default Modulo_Part_2;

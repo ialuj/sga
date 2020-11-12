@@ -74,7 +74,7 @@
 }
 
 .button-style {
-  border-radius: 30px;
+  border-radius: 1.0rem;
 }
 
 .horizontal-list {
@@ -207,4 +207,27 @@
   to {background-color: whitesmoke;}
   from{height: 0rem;}
   to{height: 30rem;}
+}
+
+.div-modules-list {
+  width: 35rem;
+  height: 2rem;
+  background-color: gainsboro;
+  animation-name: div-modules-list-animation;
+  animation-duration: 2s;
+}
+
+@keyframes div-modules-list-animation{
+  from {background-color: gainsboro;}
+  to {background-color: whitesmoke;}
+  from{height: 0rem;}
+  to{height: 2rem;}
+}
+
+.horizontal-list {
+  display:inline;
+}
+
+.div-space-hlist {
+  width: 1rem;
 }

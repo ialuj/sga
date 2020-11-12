@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import APRESENTACAO_AU from "./images/apoio_utilizador_portal.gif";
 
-import "./css/Home.css";
+import MODULO_PART_1 from "./Modulo_Part_1";
+import MODULO_PART_2 from "./Modulo_Part_2";
 
-class Contacto extends Component {
-  
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../css/Home.css";
+
+class MainModule extends Component {
   constructor() {
     super();
     this.state = {
@@ -40,37 +42,13 @@ class Contacto extends Component {
     }
   };
 
-  DIV_APRESENTACAO = () => {
-    return (
-     <div>
-       <img src={APRESENTACAO_AU} alt="" className="image" />
-     </div>
-    );
-  }
-
-  DIV_CONTACTOS = () => {
-    return (
-      <div className="div-user-help">
-      <p><span className="span-class">Contactos de Service Desk e Apoio Funcional:</span></p>
-      <p><span className="span-class">Celular</span></p>
-      <p><span className="span-content"> +258 84 67 93 603</span></p>
-      <p><span className="span-class">Fax</span></p>
-      <p><span className="span-content">21 30 97 84</span></p>
-      <p><span className="span-class">Email</span></p>
-      <p><span className="span-content span-user-help">apoio.utilizador@cedsif.gov.mz</span></p>
-      <p><span className="span-class">Linha de Apoio ao Utilizador</span></p>
-      <p><span className="span-content">1444</span></p>
-    </div>
-    );
-  }
-
   render() {
     return (
       <div className="div-home">
         <div className="div-carossel carousel slide">
           <div className="carousel-inner div-center">
-            {this.state.count === 0 && <this.DIV_APRESENTACAO /> || this.state.count === 1 && <this.DIV_APRESENTACAO />}
-            {this.state.count === 2 && <this.DIV_CONTACTOS />}
+            {this.state.count === 0 && <MODULO_PART_1 environment = {this.props.environment} urlPrefix = {this.props.urlPrefix} /> || this.state.count === 1 && <MODULO_PART_1 environment = {this.props.environment} urlPrefix = {this.props.urlPrefix}/>}
+            {this.state.count === 2 && <MODULO_PART_2 environment = {this.props.environment} urlPrefix = {this.props.urlPrefix}/>}
           </div>
           <a className="carousel-control-prev" onClick={this.decrementCount}>
             <span className="carousel-control-prev-icon"></span>
@@ -83,5 +61,4 @@ class Contacto extends Component {
     );
   }
 }
-
-export default Contacto;
+export default MainModule;
